@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Burger Quiz';
+    font-weight: 400;
+    font-style: normal;
+    src: url('burgerquiz.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Burger Quiz';
+    background: black;
+    user-select: none;
+}
+
+#teams {
+    display: flex;
+}
+
+#ketchup, #mayo {
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 446px;
+    line-height: 870px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#ketchup {
+    color: #c30000;
+}
+
+#mayo {
+    color: #ffd800;
+}
+
+#ketchup-points:before,
+#mayo-points:before {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 305px;
+    position: absolute;
+    background: white;
+    z-index: -1;
+    top: 248px;
+    left: 40px;
+}
